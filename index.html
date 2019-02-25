@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-Hans-Cn">
+<head>
+	<meta charset="UTF-8">
+	<meta name="Author" content="Ivy">
+	<meta name="Keywords" content="Keywords">
+	<meta name="Description" content="Description">
+	<title>miniJQuery</title>
+	<style>
+		#fa {
+			width: 300px;
+			height: 300px;
+		}
+		.son {
+			width: 50px;
+			height: 50px;
+			margin: 10px;
+			background: skyblue;
+		}
+		.append {
+			width: 50px;
+			height: 50px;
+			margin: 10px;
+			background: yellow;
+		}
+	</style>
+	<script src='./miniJQ.js'></script>
+	<!--<script src='./Tz-40-js.js'></script>-->
+</head>
+<body>
+	<div id="fa" test="abc" te="a">
+		<div class="append"></div>
+		<div class="append"></div>
+		<form>
+			<input class="input" type="text" value="123">
+		</form>
+	</div>
+	<div id="divfa">
+		<div class="divson"></div>
+		<div class="divson" id="son1"></div>
+		<div class="divson"></div>
+		<div class="divson"></div>
+	</div>
+	<div class="divson"></div>
+	<div class="divson"></div>
+	
+	
+	
+	<script>
+		
+		console.log($('.divson').index('#son1'));
+		// document.getElementById('fa').className = ''
+		// console.log($('#fa').prop('class', 'tessssss'))
+		
+		/*document.getElementById('fa').style['margin'] = '20px'
+		$('.divson').css({'height': '50px', 'background-color': 'skyblue', 'margin': 10})*/
+		
+		// $('.divson').css('height', 50).css('background-color', 'skyblue')
+		
+		// $('#divfa').remove('.divson');
+		
+		// let test = document.getElementsByClassName('divson');
+		// console.log($(test))
+		
+		// $('.divson').append($('.append').on('click', function () {
+		// 	console.log('son')
+		// }))
+		
+		/*$('.divson').append($('<div class="son"><p></p></div><div class="son"></div><div class="son"><span></span></div>').on('click', function () {
+			console.log('son')
+		}))*/
+		
+		/*$('<div class="son"><p></p></div><div class="son"></div><div class="son"><span></span></div>').on('click',function () {
+			console.log('son')
+		}).appendTo('.divson');*/
+		
+		// let fa = document.getElementById('divfa');
+		// console.log($('.append'))
+		// console.log($('.append').on('click',function () {
+		// 	console.log('append')
+		// }))
+		// console.log()
+		
+		
+		// $('.append').on('click',function () {
+		// 	console.log('append')
+		// }).appendTo('.divson')
+		
+		/*let son = document.getElementById('divson');
+		let fa = document.getElementById('divfa');
+		let son2 = son.cloneNode(true);
+		
+		
+		son.onclick = function () {
+			console.log('divson')
+		}
+		son2.onclick = function () {
+			console.log('divson2')
+		}
+		fa.appendChild(son2)*/
+		
+		
+		// let fragment = document.createDocumentFragment();
+		// let li = document.createElement('li')
+		// let li1= li.cloneNode(true)
+		// fragment.appendChild(li)
+		// fragment.appendChild(li1)
+		// // console.log(fragment.appendChild(li))
+		// console.log(fragment)
+		
+		// $('<div class="son"><p></p></div><div class="son"></div><div class="son"><span></span></div>').appendTo('.append');
+		
+		
+		// console.log($('.input')[-0]);
+		// console.log($('.son'));
+	// console.log($('div').removeAttr(' ', 'te', 'test'));
+	// console.log(document.getElementsByClassName('son'))
+	//
+	// 	console.log($.type($('div')))
+		
+	</script>
+</body>
+</html>
